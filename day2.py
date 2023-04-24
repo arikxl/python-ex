@@ -40,3 +40,45 @@ def ex6():
 
     print(f"{programmer_name}'s salary is {round(salary_after_raise,2)} after the raise.")
 # ex6()
+
+
+# ********page 15********
+
+def ex1():
+    num = int(input('Choose a number: '))
+    if num < 0 :
+        print('Negative')
+    else:
+        if num == 0:
+            print('Zero')
+        else: 
+            print('Positive')
+# ex1()
+
+
+def ex2():
+    num1 = int(input('Choose the first number: '))
+    num2 = int(input('Choose the second number: '))
+    num3 = int(input('Choose the third number: '))
+    if num3 > num2 and num2 > num1:
+        print('Increasing...')
+# ex2()
+
+
+def ex4():
+    num = int(input('Choose a number between 1 and 9999: '))
+    print(f'{num} got {len(str(num))} digit/s')
+    if num <10:
+        print(f'{num} got 1 digit')
+        quit()
+    if num <100:
+        print(f'{num} got 2 digits')
+        quit()
+    if num <1000:
+        print(f'{num} got 3 digits')
+        quit()
+    if num <10000:
+        print(f'{num} got 4 digits')
+        quit()
+
+# ex4()
