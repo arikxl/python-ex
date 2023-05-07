@@ -45,3 +45,39 @@ def ex5():
     else:
         print('Please choose a month between 1-12')
 # ex5()
+
+
+# ********page 42********
+def ex1(hours, minutes, seconds):
+
+    hh = str(hours).zfill(2)
+    mm = str(minutes).zfill(2)
+    ss = str(seconds).zfill(2)
+    return (f'{hh}:{mm}:{ss}')
+
+
+# hours = int(input('Enter hours: '))
+# minutes = int(input('Enter minutes: '))
+# seconds = int(input('Enter seconds: '))
+# print(ex1(hours, minutes, seconds))
+
+
+# ********page 42********
+def ex1():
+    wins = 0
+    draws = 0
+
+    for i in range(3):
+        score = input(f'What was the score of game {i+1}? (xx:xx): ')
+        score_parts = score.split(':')
+        MTA = int(score_parts[0])
+        rivals = int(score_parts[1])
+
+        if MTA > rivals:
+            wins += 1
+        elif MTA == rivals:
+            draws += 1
+    print(wins * 2 + draws)
+
+
+ex1()
