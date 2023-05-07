@@ -78,6 +78,4 @@ def ex1():
         elif MTA == rivals:
             draws += 1
     print(wins * 2 + draws)
-
-
-ex1()
+# ex1()
