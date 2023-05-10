@@ -82,10 +82,10 @@ def ex1():
 
 
 def ex2():
-    num1 = float(input("Enter number 1: "))
-    num2 = float(input("Enter number 2: "))
-    num3 = float(input("Enter number 3: "))
-    num4 = float(input("Enter number 4: "))
+    num1 = float(input('Enter number 1: '))
+    num2 = float(input('Enter number 2: '))
+    num3 = float(input('Enter number 3: '))
+    num4 = float(input('Enter number 4: '))
 
     average = (num1 + num2 + num3 + num4) / 4
 
@@ -99,3 +99,22 @@ def ex2():
         average = (num1 + num2 + num3) / 3
     print(f'The average is: {average}')
 # ex2()
+
+
+def ex3():
+    num_of_checks = int(input('Enter number of checks: '))
+    total_amount = float(input('Enter total amount of checks without fees: $'))
+
+    commission_of_num = 0.1 * num_of_checks
+    if total_amount <= 500:
+        commission_of_total = total_amount * 0.01
+    else:
+        commission_of_total= (total_amount - 500) * 0.015 + 5
+
+    total_commission = commission_of_num + commission_of_total
+
+    print(f'Number of checks is : {num_of_checks}')
+    print(f'Total amount of checks without fees: ${total_amount}')
+    print(f'Commission: ${total_commission}')
+    print(f'Total payment: ${total_amount + total_commission}')
+# ex3()
