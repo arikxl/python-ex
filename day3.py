@@ -167,4 +167,4 @@ def calc():
         return
     print(f'{num1}{operator}{num2}={result}')
 
-calc()
+# calc()
