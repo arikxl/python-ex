@@ -62,7 +62,7 @@ def ex1(hours, minutes, seconds):
 # print(ex1(hours, minutes, seconds))
 
 
-# ********page 42********
+# ********page 44********
 def ex1():
     wins = 0
     draws = 0
@@ -77,5 +77,25 @@ def ex1():
             wins += 1
         elif MTA == rivals:
             draws += 1
-    print(wins * 2 + draws)
+    print(f'MTA got {wins * 2 + draws} points.')
 # ex1()
+
+
+def ex2():
+    num1 = float(input("Enter number 1: "))
+    num2 = float(input("Enter number 2: "))
+    num3 = float(input("Enter number 3: "))
+    num4 = float(input("Enter number 4: "))
+
+    average = (num1 + num2 + num3 + num4) / 4
+
+    if num1 == 0:
+        average = 'there is no average (0)'
+    elif num2 == 0:
+        average = num1
+    elif num3 == 0:
+        average = (num1 + num2) / 2
+    elif num4 == 0:
+        average = (num1 + num2 + num3) / 3
+    print(f'The average is: {average}')
+# ex2()
