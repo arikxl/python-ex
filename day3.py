@@ -109,7 +109,7 @@ def ex3():
     if total_amount <= 500:
         commission_of_total = total_amount * 0.01
     else:
-        commission_of_total= (total_amount - 500) * 0.015 + 5
+        commission_of_total = (total_amount - 500) * 0.015 + 5
 
     total_commission = commission_of_num + commission_of_total
 
@@ -130,7 +130,7 @@ def ex4():
     if seniority > 10:
         salary += basic_salary * 0.1
 
-    if children >=4 and children <7 :
+    if children >= 4 and children < 7:
         salary += 400 * children
     elif children >= 7:
         salary += 700 * children
@@ -144,4 +144,27 @@ def ex4():
             salary += (extra_hours - 16) * 120
 
     print(f'The total salary is: ${salary}')
-ex4()
+# ex4()
+
+
+def calc():
+    num1 = int(input('Choose the first number: '))
+    num2 = int(input('Choose the second number: '))
+    operator = input('Choose the operator: (+, -, *, /, %)')
+
+    if operator == '+':
+        result = num1 + num2
+    elif operator == '-':
+        result = num1 - num2
+    elif operator == '*':
+        result = num1 * num2
+    elif operator == '/':
+        result = num1 / num2
+    elif operator == '%':
+        result = num1 % num2
+    else:
+        print('Invalid operator')
+        return
+    print(f'{num1}{operator}{num2}={result}')
+
+calc()
