@@ -1,5 +1,16 @@
 # ********page 35********
 
+def ex1():
+    for i in range(1, 11):
+        num = 0
+        new_num = int(input('Choose a number: '))
+        if new_num < num:
+            print(i)
+            return 'Not Sorted'
+    return 'Sorted'
+print(ex1())
+
+
 def ex1(numbers):
     for i in range(1, len(numbers)):
         if numbers[i] < numbers[i-1]:
