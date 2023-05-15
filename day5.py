@@ -52,4 +52,27 @@ def ex2():
         number = int(input('Choose a number: '))
         factorial = math.factorial(number)
         print(f'The factorial of {number} is {factorial}.')
-ex2()
+# ex2()
+
+
+def ex5():
+    number = int(input('Choose a number: '))
+    i = number
+    while i > 0:
+        print(*range(1, i+1))
+        i -= 1
+# ex5()
+
+
+
+# ********page 38********
+
+
+def ex9():
+    for i in range(1, 21):
+        row = []
+        for j in range(1, 21):
+            row.append(i * j)
+        print(*row)
+
+ex9()
