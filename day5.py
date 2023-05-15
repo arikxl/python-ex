@@ -1,3 +1,5 @@
+import math
+
 # ********page 35********
 
 def ex1():
@@ -35,4 +37,19 @@ def ex4():
     print('Number of "Agree" votes:', votes[1])
     print('Number of "Against" votes:', votes[2])
     print('Number of "Abstain" votes:', votes[3])
-ex4()
+# ex4()
+
+
+
+# ********page 37********
+
+# def ex1():
+
+
+
+def ex2():
+    for i in range(1, 101):
+        number = int(input('Choose a number: '))
+        factorial = math.factorial(number)
+        print(f'The factorial of {number} is {factorial}.')
+ex2()
