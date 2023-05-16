@@ -74,5 +74,24 @@ def ex9():
         for j in range(1, 21):
             row.append(i * j)
         print(*row)
+# ex9()
 
-ex9()
+def ex12():
+    max_salary = float('-inf')
+    highest_employee = ''
+    highest_month = ''
+
+    for _ in range(200):
+        employee_name = input('Enter employee name: ')
+        salaries = list(map(int, input('Enter 12 monthly salaries (separated by space): ').split()))
+
+        if max(salaries) > max_salary:
+            max_salary = max(salaries)
+            highest_employee = employee_name
+            highest_month = salaries.index(max_salary) + 1
+
+    print(f'The employee with the highest salary is {highest_employee}.')
+    print(f'The highest salary of {highest_employee} is {max_salary}.')
+    print(f"The month of {highest_employee}'s highest salary is {highest_month}.")
+
+ex12()
