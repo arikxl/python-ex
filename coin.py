@@ -39,7 +39,7 @@ class Pound(Coin):
         data = {
             'original_value':1.00,
             'clean_color': 'gold',
-            'rusty_color':' greenish',
+            'rusty_color':'greenish',
             'num_edges': 1,
             'diameter': 22.5,
             'thickness': 3.15,
@@ -47,6 +47,67 @@ class Pound(Coin):
         }
         super().__init__(**data)
 
-pound1 = Pound()
-print(pound1.color)
-print(pound1.value)
+class Pence(Coin):
+    def __init__(self):
+        data = {
+            'original_value':0.01,
+            'clean_color': 'bronze',
+            'rusty_color':'brownish',
+            'num_edges': 1,
+            'diameter': 20.3,
+            'thickness': 1.52,
+            'mass': 3.56 
+        }
+        super().__init__(**data)
+
+class Five_Pence(Coin):
+    def __init__(self):
+        data = {
+            'original_value':0.05,
+            'clean_color': 'silver',
+            'rusty_color':None,
+            'num_edges': 1,
+            'diameter': 18.0,
+            'thickness': 1.77,
+            'mass': 3.25 
+        }
+        super().__init__(**data)
+
+        def rust(self):
+            self.color = self.clean_color 
+
+class Fifty_Pence(Coin):
+    def __init__(self):
+        data = {
+            'original_value':0.50,
+            'clean_color': 'silver',
+            'rusty_color':None,
+            'num_edges': 7,
+            'diameter': 27.3,
+            'thickness': 1.78,
+            'mass': 8.00 
+        }
+        super().__init__(**data)
+
+        def rust(self):
+            self.color = self.clean_color 
+
+class Two_Pound(Coin):
+    def __init__(self):
+        data = {
+            'original_value':2.00,
+            'clean_color': 'gold & silver',
+            'rusty_color':'greenish',
+            'num_edges': 1,
+            'diameter': 28.3,
+            'thickness': 2.50,
+            'mass': 12.00 
+        }
+        super().__init__(**data)
+
+
+coins =[Pound(),Pence(), Five_Pence(), Fifty_Pence(), Two_Pound()]
+
+for coin in coins:
+    arguments = [ coin.color, coin.value,]
+    print(coin.value)        
