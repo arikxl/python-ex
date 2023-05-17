@@ -3,7 +3,7 @@ import math
 # ********page 35********
 
 def ex1():
-    num = float('-inf')
+    num = 0
     for i in range(1, 11):
         new_num = int(input('Choose a number: '))
         if num > new_num:
